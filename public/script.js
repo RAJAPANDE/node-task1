@@ -5,7 +5,7 @@ document.getElementById('userForm').addEventListener('submit', async function (e
     const user = Object.fromEntries(formData.entries());
   
     try {
-      const response = await fetch('http://localhost:5000/api/users', {
+      const response = await fetch('https://node-task1-fzmh.onrender.com/api/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(user),
