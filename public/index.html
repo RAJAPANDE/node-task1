@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>User Management System</h1>
+  <div class="form-container">
+    <form id="userForm">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="text" name="mobileNo" placeholder="Mobile No" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="street" placeholder="Street">
+      <input type="text" name="city" placeholder="City">
+      <input type="text" name="state" placeholder="State">
+      <input type="text" name="country" placeholder="Country">
+      <input type="text" name="loginId" placeholder="Login ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Save User</button>
+    </form>
+  </div>
+
+  <div class="data-container">
+    <h2>All Users</h2>
+    <button id="fetchData">Fetch Users</button>
+    <pre id="userData"></pre>
+  </div>
+</body>
+</html>
